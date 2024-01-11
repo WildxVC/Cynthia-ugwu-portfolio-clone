@@ -19,6 +19,16 @@ body {
   font-family: "generalsans";
 }
 
+.cursor {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 10;
+  position: absolute;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
 #main {
   background-color: black;
 }
@@ -65,16 +75,36 @@ h5 {
   opacity: 0.7;
 }
 
-#landingpage .hero-texts h1:nth-child(2) {
+#landingpage .hero-texts .elem-holder:nth-child(2) {
   align-self: flex-end;
 }
-#landingpage .hero-texts h3 {
+#landingpage .hero-texts .elem-holder:last-child {
   align-self: flex-end;
   font-size: 1.1vw;
   padding-top: 1vw;
 }
 
+.elem-holder {
+  width: fit-content;
+  /* background-color: red; */
+  overflow: hidden;
+  /* position: relative; */
+}
+
+.elem-holder h1 {
+  transform: translateY(100%);
+}
+
+.elem-holder h3 {
+  transform: translateY(-150%);
+}
+.elem-holder p {
+  transform: translateY(-100%);
+}
+
 .right-hero-text {
+  display: flex;
+  align-items: flex-end;
   text-align: right;
   padding: 6vw 4vw;
   display: flex;
@@ -139,6 +169,19 @@ h5 {
   opacity: 0.7;
 }
 
+.list-elem {
+  position: relative;
+}
+
+.list-elem img {
+  opacity: 0;
+  pointer-events: none;
+  height: 140%;
+  z-index: 999;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
 #about {
   width: 100%;
   height: 100vh;
@@ -180,30 +223,31 @@ h5 {
   font-size: 0.9vw;
 }
 
-.subscribe{
-    padding-left: 3vw;
-    padding-top: 10vw;
+.subscribe {
+  padding-left: 3vw;
+  padding-top: 10vw;
 }
 
-.subscribe p:last-child{
-    font-weight: 500;
+.subscribe p:last-child {
+  font-weight: 500;
 }
-.subscribe p:first-child{
-    font-size: 0.9vw;
-    opacity: 0.7;
-    padding-bottom: 0.8vw;
-}
-
-.about-footer{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    padding: 3vw;
+.subscribe p:first-child {
+  font-size: 0.9vw;
+  opacity: 0.7;
+  padding-bottom: 0.8vw;
 }
 
-.timestamps,.social-links{
-    display: flex;
-    gap: 2.5vw;
+.about-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 3vw;
+}
+
+.timestamps,
+.social-links {
+  display: flex;
+  gap: 2.5vw;
 }

@@ -7,26 +7,45 @@
     <link rel="stylesheet" href="static/css/style.css">
     <!-- remix icon cdn -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
     <title>Cynthia Ugwu Porfolio Clone</title>
 </head>
 
 <body>
+    <div class="cursor"></div>
     <div id="main">
-        <section id="landingpage">
+        <div id="landingpage">
             <nav>
                 <a href="">Cynthia Ugwu</a>
                 <h5>MENU+</h5>
             </nav>
 
             <div class="hero-texts">
-                <h1>PRODUCT</h1>
-                <h1>DESIGNER</h1>
-                <h3>BASED IN TORONTO</h3>
+
+                <div class="elem-holder">
+                    <h1>PRODUCT</h1>
+                </div>
+
+                <div class="elem-holder">
+                    <h1>DESIGNER</h1>
+                </div>
+
+                <div class="elem-holder">
+                    <h3>BASED IN TORONTO</h3>
+                </div>
+
             </div>
 
             <div class="right-hero-text">
-                <p>AVAILABLE FOR FREELANCE</p>
-                <p>FROM MAY'23</p>
+
+                <div class="elem-holder">
+                    <p>AVAILABLE FOR FREELANCE</p>
+                </div>
+
+                <div class="elem-holder">
+                    <p>FROM MAY'23</p>
+                </div>
+
             </div>
 
             <div class="landing-footer">
@@ -37,24 +56,29 @@
                     <div class="circle"><i class="ri-arrow-down-line"></i></div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="hover-list">
+        <div id="hover-list">
             <div class="list-elem">
+                <img src="static/img/plug.png" alt="">
                 <h1>THE PLUG</h1>
                 <p>2022</p>
             </div>
             <div class="list-elem">
+                <img src="static/img/ixperience.png" alt="">
+
                 <h1>IXPERIENCE</h1>
                 <p>2022</p>
             </div>
             <div class="list-elem">
+                <img src="static/img/hudu.png" alt="">
+
                 <h1>HUDU</h1>
                 <p>2022</p>
             </div>
-        </section>
+        </div>
 
-        <section id="about">
+        <div id="about">
             <div class="about-wrapper">
                 <img src="static/img/cynthia.png" alt="">
                 <div class="about-text">
@@ -87,9 +111,13 @@
                     <h4>TWITTER</h4>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+        integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="static/js/script.js"></script>
 </body>
 
